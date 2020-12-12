@@ -1,0 +1,357 @@
+<Entities>
+
+    <!-- Special tags: -->
+    <!-- __pseudo="name1,name2" Gives the object other names (replacing the default one)-->
+    <!-- __sub="base" Creates another name for an entity and changes attributes based on whats being read -->
+    <!-- To get an idea how the __sub tag works, check the booster -->
+
+    <!-- For cases where submodules are used (aka everest/) add __module="module/name/" It just adds it to the front of the name-->
+    <player x="0" y="0"></player>
+    <darkChaser x="0" y="0" canChangeMusic="true" __pseudo="badelineChaser"></darkChaser>
+    <darkChaserEnd x="0" y="0" width="16" height="16" __pseudo="darkChaserBarrier,badelineChaserEnd,badelineChaserBarrier"></darkChaserEnd>
+
+    <!-- To specify nodes without actually including them, just leave the attributes out-->
+    <strawberry x="0" y="0" winged = "false" moon = "false" checkpointId = "1" order = "-1">
+        <node></node>
+    </strawberry>
+
+    <moonBerry __sub="strawberry" moon="true"></moonBerry>
+    <wingedBerry __sub="strawberry" winged="true"></wingedBerry>
+
+    <goldenBerry x="0" y="0" winged="false">
+        <node></node>
+    </goldenBerry>
+
+    <memorialTextController x="0" y="0" __pseudo="goldenStrawberryNoDash">
+        <node></node>
+    </memorialTextController>
+
+    <badelineBoost x="0" y="0" lockCamera="true" canSkip="false" finalCh9Boost="false" finalCh9GoldenBoost="false" finalCh9Dialog="false">
+        <node></node>
+    </badelineBoost>
+
+    <finalBoss x="0" y="0" __pseudo="badelineBoss" patternIndex="1" startHit="false" cameraPastY="120.0" cameraLockY="true" canChangeMusic="true">
+        <node></node>
+    </finalBoss>
+
+    <fireBall x="0" y="0" ammount="1" offset = "0.0" speed="1.0" notCodeMode="false">
+        <node></node>
+    </fireBall>
+
+    <tentacles x="0" y="0" fear_distance="" slide_until="0">
+        <node></node>
+    </tentacles>
+
+    <cobweb x="0" y="0" color="696A6A">
+        <node></node>
+    </cobweb>
+
+    <seeker x="0" y="0">
+        <node></node>
+    </seeker>
+
+    <seekerStatue x="0" y="0" hatch="Distance">
+        <nodes></nodes>
+    </seekerStatue>
+
+    <playerSeeker x="0" y="0"></playerSeeker>
+
+    <cassette x="0" y="0">
+        <node x="0" y="0"></node>
+        <node x="0" y="0"></node>
+    </cassette>
+
+    <towerviewer x="0" y="0" summit="false" onlyY="false" __pseudo="lookout"></towerviewer>
+
+    <floatingDebris x="0" y="0"></floatingDebris>
+    <foregroundDebris x="0" y="0"></foregroundDebris>
+
+    <dreammirror x="0" y="0"></dreammirror>
+    <resortmirror x="0" y="0"></resortmirror>
+    <templeMirror x="0" y="0" reflectX="0.0" reflectY="0.0"></templeMirror>
+
+    <refill x="0" y="0" twoDash="false" oneUse="false"></refill>
+    <refillTwo __sub="refill" twoDash="true"></refillTwo>
+
+    <infiniteStar x="0" y="0" shielded="false" singleUse="false" __pseudo="feather"></infiniteStar>
+    <checkpoint x="0" y="0" checkpointID="-1" bg="" allowOrigin="false" __pseudo="chapterCheckpoint"></checkpoint>
+
+    <summitcheckpoint x="0" y="0" number="0" __pseudo="summitCheckpoint"></summitcheckpoint>
+
+    <spikesUp x="0" y="0" width="8" type="default"></spikesUp>
+    <spikesDown x="0" y="0" width="8" type="default"></spikesDown>
+    <spikesLeft x="0" y="0" height="8" type="default"></spikesLeft>
+    <spikesRight x="0" y="0" height="8" type="default"></spikesRight>
+
+    <triggerSpikesUp x="0" y="0" width="8"></triggerSpikesUp>
+    <triggerSpikesDown x="0" y="0" width="8"></triggerSpikesDown>
+    <triggerSpikesLeft x="0" y="0" height="8"></triggerSpikesLeft>
+    <triggerSpikesRight x="0" y="0" height="8"></triggerSpikesRight>
+
+    <triggerSpikesOriginalUp x="0" y="0" width="8" type="default"></triggerSpikesOriginalUp>
+    <triggerSpikesOriginalDown x="0" y="0" width="8" type="default"></triggerSpikesOriginalDown>
+    <triggerSpikesOriginalLeft x="0" y="0" height="8" type="default"></triggerSpikesOriginalLeft>
+    <triggerSpikesOriginalRight x="0" y="0" height="8" type="default"></triggerSpikesOriginalRight>
+
+    <spinner x="0" y="0" attachToSolid="false"></spinner>
+
+    <trackSpinner x="0" y="0" speed="Normal" startCenter="false" dust="false" star="false">
+        <node x="16" y="16"></node>
+    </trackSpinner>
+
+    <rotateSpinner x="0" y="0" clockwise="false" dust="false" star="false">
+        <nodes x="16" y="16"></nodes>
+    </rotateSpinner>
+
+    <jumpThru x="0" y="0" width="8" texture="wood" surfaceIndex="-1"></jumpThru>
+    <wallBooster x="0" y="0" height="8" left="false" notCoreMode="false"></wallBooster>
+    <booster x="0" y="0" red="false" ch9_hub_booster="false" __pseudo="greenBooster"></booster>
+    <redBooster __sub="booster" red="true"></redBooster>
+
+
+    <lightbeam x="0" y="0" width="32" height="24" flag="" rotation="0"></lightbeam>
+    <torch x="0" y="0" startLit="false"></torch>
+
+    <wire x="0" y="0" above="false" color="595866" >
+        <node x="8" y="0"></node>
+    </wire>
+
+    <clothesline x="0" y="0">
+        <node x="8" y="8"></node>
+    </clothesline>
+
+    <cliffflag x="0" y="0" __pseudo="flagLine">
+        <node x="8" y="0"></node>
+    </cliffflag>
+
+    <swapBlock x="0" y="0" width="16" height="16" theme="Normal">
+        <node x="16" y="0"></node>
+    </swapBlock>
+
+    <moonSwapBlock __sub="swapBlock" theme="Moon"></moonSwapBlock>
+
+
+    <switchGate x="0" y="0" width="16" height="16" persistent="false" sprite="block">
+        <node x="16" y="0"></node>
+    </switchGate>
+
+    <touchSwitch x="0" y="0"></touchSwitch>
+
+    <sinkingPlatform x="0" y="0" width="16" texture="default"></sinkingPlatform>
+    <movingPlatform x="0" y="0" width="16" texture="default">
+        <node x="16" y="0"></node>
+    </movingPlatform>
+
+
+    <zipMover x="0" y="0" width="16" height="16" theme="Normal">
+        <node x="16" y="0"></node>
+    </zipMover>
+
+    <moonZipMover __sub="zipMover" theme="Moon"></moonZipMover>
+
+    <coreModeToggle x="0" y="0" onlyIce="false" onlyFire="false" persistent="false"></coreModeToggle>
+
+    <slider x="0" y="0" clockwise="true" surface="Floor"></slider>
+
+    <blackGem __pseudo ="crystalHeart" x="0" y="0" fake="false" removeCameraTriggers="false" fakeHeartDialog="CH9_FAKE_HEART" keepGoingDialog="CH9_KEEP_GOING"></blackGem>
+    <fakeHeart x="0" y="0" color="Random"></fakeHeart>
+    <dreamHeartGem x="0" y="0"></dreamHeartGem>
+    <heartGemDoor __pseudo="heatGate" x="0" y="0" width="40" requires="0" startHidden="false"></heartGemDoor>
+
+    <plateau x="0" y="0"></plateau>
+    <resortRoofEnding x="0" y="0" width="16"></resortRoofEnding>
+
+    <crumbleBlock x="0" y="0" width="16" texture="default"></crumbleBlock>
+    <fakeWall x="0" y="0" width="16" height="16" tiletype="3" playTransitionReveal="false"></fakeWall>
+
+    <floatySpaceBlock x="0" y="0" width="16" height="16" tileType="3" disableSpawnOffset="false" ></floatySpaceBlock>
+    <crumbleWallOnRumble x="0" y="0" width="16" height="16" tiletype="m" blendin="true" persistent="false"></crumbleWallOnRumble>
+
+    <fakeBlock x="0" y="0" width="16" height="16" tiletype="3" playTransitionReveal="false"></fakeBlock>
+
+    <exitBlock x="0" y="0" width="16" height="16" tileType="3" playTransitionReveal="false"></exitBlock>
+    <conditionBlock x="0" y="0" width="16" height="16" tileType="3" condition="Key" conditionID="1:1"></conditionBlock>
+    <coverupWall x="0" y="0" width="16" height="16" tiletype="3"></coverupWall>
+    <dashBlock x="0" y="0" width="16" height="16" tiletype="3" blendin="false" canDash="true" permanent="true"></dashBlock>
+    <fallingBlock x="0" y="0" width="16" height="16" tiletype="3" climbFall="true" behind="false"></fallingBlock>
+
+    <finalBossFallingBlock __pseudo="badelineFallingBlock" x="0" y="0" width="16" height="16"></finalBossFallingBlock>
+    <introCrusher x="0" y="0" width="16" height="16" tiletype="3" flags="1,0b"></introCrusher>
+
+    <ridgeGate x="0" y="0" strawberries="" keys="" texture="objects/ridgeGate" width="32" height="32">
+        <nodes x="16" y="0"></nodes>
+    </ridgeGate>
+
+    <cassetteBlock x="0" y="0" width="16" height="16" index="0" temp="1.0"></cassetteBlock>
+    <negaBlock x="0" y="0" width="16" height="16"></negaBlock>
+    <moveBlock x="0" y="0" width="16" height="16" direction="Up" canSteer="false" fast="false"></moveBlock>
+    <crushBlock __pseudo="kevinBlock" x="0" y="0" width="16" height="16" axes="both" chillout="false"></crushBlock>
+
+    <iceBlock x="0" y="0" width="16" height="16"></iceBlock>
+    <fireBarrier x="0" y="0" width="16" height="16"></fireBarrier>
+
+    <dreamBlock __pseudo ="spaceJam" x="0" y="0" width="16" height="16" fastMoving="false" oneUse="false" below="false"></dreamBlock>
+    <movingDreamBlock __sub="dreamBlock" __pseudo="movingSpaceJam">
+        <node x="16" y="0"></node>
+    </movingDreamBlock>
+
+    <starJumpBlock x="0" y="0" width="16" height="16" sinks="true"></starJumpBlock>
+    <starClimbController x="0" y="0"></starClimbController>
+    <starClimbGraphicsController x="0" y="0" fgColor="A3FFFF" bgColor="293E4B" __module="everest/"></starClimbGraphicsController>
+
+    <blockField x="0" y="0" width="16" height="16" __pseudo="strawberryBlockField"></blockField>
+
+    <bounceBlock x="0" y="0" width="16" height="16" notCoreMode="false"></bounceBlock>
+
+    <whiteblock x="0" y="0"> </whiteblock>
+    <goldenBlock x="0" y="0" width="16" height="16"></goldenBlock>
+
+    <invisibleBarrier x="0" y="0" width="16" height="16"></invisibleBarrier>
+    <seekerBarrier x="0" y="0" width="16" height="16"></seekerBarrier>
+    <templeCrackedBlock x="0" y="0" width="16" height="16" persistent="false"></templeCrackedBlock>
+
+    <templeMirrorPortal x="0" y="0"></templeMirrorPortal>
+    <finalBossMovingBlock x="0" y="0" width="16" height="16" nodeIndex="0" __pseudo="badelineMovingBlock">
+        <node x="16" y="16"></node>
+    </finalBossMovingBlock>
+
+    <killbox x="0" y="0" width ="16"></killbox>
+
+    <cliffside_flag x="0" y="0" index="0"></cliffside_flag>
+
+    <water x="0" y="0" width="16" height="16" hasBottom="false"></water>
+    <waterfall x="0" y="0"></waterfall>
+    <bigWaterfall x="0" y="0" width="16" height="64" layer="FG"></bigWaterfall>
+
+    <hanginglamp x="0" y="0" height="16"></hanginglamp>
+    <resortLantern x="0" y="0"></resortLantern>
+    <lamp x="0" y="0" broken="false"></lamp>
+    <brokenLamp __sub="lamp" broken="true"></brokenLamp>
+
+    <door x="0" y="0" type="wood"></door>
+    <oshirodoor x="0" y="0"></oshirodoor>
+    <trapdoor x="0" y="0"></trapdoor>
+
+    <picoconsole x="0" y="0"></picoconsole>
+    <soundSource x="0" y="0" sound=""></soundSource>
+
+    <introCar x="0" y="0" hasRoadAndBarriers="false"></introCar>
+
+    <gondola x="0" y="0" active="true">
+        <node x="128" y="-128"></node>
+    </gondola>
+
+    <templeEye x="0" y="0"></templeEye>
+    <templeBigEyeball x="0" y="0" __pseudo="templeBigEye"></templeBigEyeball>
+
+    <summitcloud x="0" y="0"></summitcloud>
+    <cloud x="0" y="0" fragile="false" small="false"></cloud>
+    <fragileCloud __sub="cloud" fragile = "true"></fragileCloud>
+
+    <spring x="0" y="0" playerCanUse="true"></spring>
+    <wallSpringRight x="0" y="0" playerCanUse="true"></wallSpringRight>
+    <wallSpringLeft x="0" y="0" playerCanUse="true"></wallSpringLeft>
+
+    <colorSwitch x="0" y="0" type="red" __pseudo="clutterSwitch"></colorSwitch>
+    <yellowBlocks x="0" y="0" width="16" height="16"></yellowBlocks>
+    <greenBlocks x="0" y="0" width="16" height="16"></greenBlocks>
+    <redBlocks x="0" y="0" width="16" height="16"></redBlocks>
+    <clutterCabinet x="0" y="0"></clutterCabinet>
+    <clutterDoor x="0" y="0" width="24" height="24" type="green"></clutterDoor>
+
+    <dashSwitchH x="0" y="0" leftSide="false" persistent="false" sprite="default" __pseudo="dashSwitchHorizontal"></dashSwitchH>
+    <dashSwitchV x="0" y="0" ceiling="false" persistent="false" sprite="default" __pseudo="dashSwitchVertical"></dashSwitchV>
+    <templeGate x="0" y="0" height="48" type="NearestSwitch" sprite="default"></templeGate>
+
+    <theoCrystalPedestal x="0" y="0"></theoCrystalPedestal>
+    <theoCrystal x="0" y="0"></theoCrystal>
+
+    <bigSpinner x="0" y="0" __pseudo="bumper"></bigSpinner>
+
+    <bonfire x="0" y="0" mode="Lit"></bonfire>
+    <friendlyGhost x="0" y="0" __pseudo="oshiroBoss"></friendlyGhost>
+
+    <key x="0" y="0"></key>
+    <lockBlock x="0" y="0" sprite="wood" unlock_sfx="" stepMusicProgress="false"></lockBlock>
+
+    <flutterbird x="0" y="0"></flutterbird>
+
+    <bird x="0" y="0" mode="Sleeping" onlyOnce="false" onlyIfPlayerLeft="false">
+        <node></node>
+    </bird>
+
+    <haha x="0" y="0" ifset="" triggerLaughSfx="false">
+        <node x="16" y="0"></node>
+    </haha>
+
+    <npc x="0" y="0" npc="granny_00_house"></npc>
+
+    <SummitBackgroundManager x="0" y="0" index="0" cutscene="" intro_launch="false" dark="false" ambience=""></SummitBackgroundManager>
+
+    <cutsceneNode x="0" y="0" nodeName=""></cutsceneNode>
+
+    <npc x="0" y="0" __pseudo="EverestCustomNPC" __module="everest/" sprite="player/idle" spriteRate="1" dialogId="" onlyOnce="true" endLevel="false" flipX="false" flipY="false" approachWhenTalking="false" approachDistance="16" indicatorOffsetX="0" indicatorOffsetY="0"></npc>
+
+    <reflectionHeartStatue x="0" y="0">
+        <node x="32" y="0"></node>
+        <node x="64" y="0"></node>
+        <node x="96" y="0"></node>
+        <node x="128" y="0"></node>
+        <node x="0" y="-64"></node>
+    </reflectionHeartStatue>
+
+    <birdForsakenCityGem x="0" y="0" __pseudo="forsakenCitySatellite">
+        <node x="64" y="0"></node>
+        <node x="48" y="0"></node>
+    </birdForsakenCityGem>
+
+
+    <coreMessage x="0" y="0" line="0"></coreMessage>
+    <coreMessage __module="everest/" x="0" y="0" line="0" dialog="app_ending" outline="false"></coreMessage>
+
+    <memorial x="0" y="0" dreaming="false"></memorial>
+    <memorial __module="everest/" x="0" y="0" dreaming="false" dialog="MEMORIAL" sprite="scenery/memorial/memorial" spacing="16"></memorial>
+    <payphone x="0" y="0"></payphone>
+
+    <risingLava x="0" y="0" intro="false"></risingLava>
+    <sandwichLava x="0" y="0"></sandwichLava>
+
+    <bridge x="0" y="0" width="32">
+        <node x="96" y="0"></node>
+        <node x="128" y="0"></node>
+    </bridge>
+    <bridgeFixed x="0" y="0" width="32"></bridgeFixed>
+
+    <glassBlock x="0" y="0" width="16" height="16" sinks="false"></glassBlock>
+
+    <summitgem x="0" y="0" gem="0"></summitgem>
+    <summitGemManager x="0" y="0"></summitGemManager>
+
+    <moonCreature x="0" y="0" number="1"></moonCreature>
+
+    <glider x="0" y="0" bubble="false" tutorial="false" __pseudo="jellyfish"></glider>
+
+    <eyebomb x="0" y="0" right="false" __pseudo="puffer"></eyebomb>
+
+    <lightning x="0" y="0" width="16" height="16" perLevel="false" moveTime="5.0">
+        <node></node>
+    </lightning>
+
+    <lightningBlock x="0" y="0" flipX="false" music_progress="-1" music_session="false" music="" flag="false"></lightningBlock>
+
+    <birdPath x="0" y="0" only_once="false" onlyIfLeft="false" speedMult="1.0"></birdPath>
+    <flingBird x="0" y="0" waiting="false"></flingBird>
+    <flingBirdIntro x="0" y="0">
+        <node></node>
+    </flingBirdIntro>
+
+    <playbackBillboard x="0" y="0" width="16" height="16"></playbackBillboard>
+    <playbackTutorial x="0" y="0" tutorial="">
+        <node></node>
+    </playbackTutorial>
+
+    <kevins_pc x="0" y="0"></kevins_pc>
+    <wavedashmachine x="0" y="0" __pseudo="internetCafe"></wavedashmachine>
+
+    <customBirdTutorial __module="everest/" x="0" y="0" birdId="" onlyOnce="false" caw="true" faceLeft="true" info="TUTORIAL_DREAMJUMP" controls="DownRight,+,Dash,tinyarrow,Jump"></customBirdTutorial>
+</Entities>

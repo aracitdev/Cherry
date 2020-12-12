@@ -1,0 +1,21 @@
+<Style>
+    <snowFg only="*" exclude=""></snowFg>
+    <snowBg only="*" exclude=""></snowBg>
+    <heatwave only="*" exclude=""></heatwave>
+    <dreamstars only="*" exclude=""></dreamstars>
+    <stars only="*" exclude=""></stars>
+    <mirrorfg only="*" exclude=""></mirrorfg>
+    <reflectionfg only="*" exclude=""></reflectionfg>
+    <corestarsfg only="*" exclude=""></corestarsfg>
+    <godrays only="*" exclude=""></godrays>
+    <bossStarField only="*" exclude=""></bossStarField>
+    <windsnow only="*" exclude="" color=""></windsnow>
+    <planets only="*" exclude="" count="32" size="small" color="" scrollx="1.0" scrolly="1.0"></planets>
+    <starfield only="*" exclude="" color="" scrollx="1" scrolly="1" speed="1.0"></starfield>
+    <petals only="*" exclude=""></petals>
+    <northernlights only="" exclude=""></northernlights>
+    <tentacles only="" exclude="" side="Right" color="" offset="0"></tentacles>
+    <stardust only="*" exclude=""></stardust>
+    <rain only="*" exclude="" color="161933"></rain>
+    <blackhole only="*" exclude=""></blackhole>
+</Style>

@@ -1,0 +1,38 @@
+<Render>
+    <player>
+        <normal>
+            <sprite texture="characters/player/idle00"></sprite>
+        </normal>
+    </player>
+
+    <darkChaser>
+        <normal>
+            <sprite texture="characters/badeline/idle00"></sprite>
+        </normal>
+    </darkChaser>
+
+    <darkChaserEnd>
+        </normal>
+            <sprite texture="characters/badeline/idle00"></sprite>
+        </normal>
+    </darkChaserEnd>
+
+    <strawberry>
+        <normal winged = "false" moon = "false">
+            <sprite texture="collectables/strawberry/normal00"></sprite>
+        </normal>
+        <moon winged = "false" moon = "true">
+            <sprite texture="collectables/moonBerry/normal00"></sprite>
+        </moon>
+        <winged winged="true" moon = "false">
+            <sprite texture="collectable/strawberry/wings00"></sprite>
+        </winged>
+    </strawberry>
+
+    <goldenBerry>
+        <normal>
+            <sprite texture=""
+        </normal>
+    </goldenBerry>
+
+</Render>

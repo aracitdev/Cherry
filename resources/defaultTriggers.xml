@@ -1,0 +1,59 @@
+<Entities>
+    <altMusicTrigger x="0" y="0" width="16" height="16" track="" resetOnLeave="false"></altMusicTrigger>
+    <ambienceParamTrigger x="0" y="0" width="16" height="16" parameter="" from="0.0" to="0.0" direction="NoEffect"></ambienceParamTrigger>
+    <bloomFadeTrigger x="0" y="0" width="16" height="16" bloomAddFrom="0.0" bloomAddTo="0.0" positionMode="NoEffect"></bloomFadeTrigger>
+    <cameraOffsetTrigger x="0" y="0" width="16" height="16" cameraX="0.0" cameraY="0.0"></cameraOffsetTrigger>
+    <checkpointBlockerTrigger x="0" y="0" width="16" height="16"></checkpointBlockerTrigger>
+    <creditsTrigger x="0" y="0" width="16" height="16" event=""></creditsTrigger>
+    <eventTrigger x="0" y="0" width="16" height="16" event=""></eventTrigger>
+    <goldenBerryCollectTrigger x="0" y="0" width="16" height="16"></goldenBerryCollectTrigger>
+    <lightFadeTrigger x="0" y="0" width="16" height="16" lightAddFrom="0.0" lightAddTo="0.0" positionMode="NoEffect"></lightFadeTrigger>
+    <lookoutBlocker x="0" y="0" width="16" height="16"></lookoutBlocker>
+    <minitextboxTrigger x="0" y="0" width="16" height="16" dialog_id="" mode="OnPlayerEnter" only_once="true" death_count="-1"></minitextboxTrigger>
+    <musicFadeTrigger x="0" y="0" width="16" height="16" direction="leftToRight" fadeA="0.0" fadeB="1.0" parameter=""></musicFadeTrigger>
+    <musicTrigger x="0" y="0" width="16" height="16" track="" resetOnLeave="true" progress="0"></musicTrigger>
+    <noRefillTrigger x="0" y="0" width="16" height="16" state="true"></noRefillTrigger>
+    <oshiroTrigger x="0" y="0" width="16" height="16" state="true"></oshiroTrigger>
+    <stopBoostTrigger x="0" y="0" width="16" height="16"></stopBoostTrigger>
+    <windAttackTrigger x="0" y="0" width="16" height="16"></windAttackTrigger>
+    <windTrigger x="0" y="0" width="16" height="16" pattern="None"></windTrigger>
+    <spawnFacingTrigger x="0" y="0" width="16" height="16" facing="Right"></spawnFacingTrigger>
+
+    <cameraTargetTrigger x="0" y="0" width="16" height="16" lerpStrength="0.0" positionMode="NoEffect" xOnly="false" yOnly="false" deleteFlag="">
+        <nodes></nodes>
+    </cameraTargetTrigger>
+    <cameraAdvanceTargetTrigger x="0" y="0" width="16" height="16"  lerpStrengthX="0.0" lerpStrengthY="0.0" positionModeX="NoEffect" positionModeY="NoEffect" xOnly="false" yOnly="false">
+        <nodes></nodes>
+    </cameraAdvanceTargetTrigger>
+
+    <changeRespawnTrigger x="0" y="0" width="16" height="16">
+        <nodes></nodes>
+    </changeRespawnTrigger>
+
+    <respawnTargetTrigger x="0" y="0" width="16" height="16">
+        <nodes></nodes>
+    </respawnTargetTrigger>
+
+    <birdPathTrigger x="0" y="0" width="16" height="16"></birdPathTrigger>
+    <blackholeStrength x="0" y="0" width="16" height="16" strength="Mild"></blackholeStrength>
+    <detachFollowersTrigger x="0" y="0" width="16" height="16" global="true"></detachFollowersTrigger>
+
+    <moonGlitchBackgroundTrigger x="0" y="0" width="16" height="16" duration="Short" stay="false" glitch="true"></moonGlitchBackgroundTrigger>
+    <rumbleTrigger x="0" y="0" width="16" height="16" manualTrigger="false" persistent="false" constrainHeight="false"></rumbleTrigger>
+
+    <customBirdTutorialTrigger __module="everest/" x="0" y="0" width="16" height="16" birdId="" showTutorial="true"></customBirdTutorialTrigger>
+
+    <flagTrigger __module="everest/" x="0" y="0" width="16" height="16" flag="" state="false" mode="OnPlayerEnter" only_once="false" death_count="-1"></flagTrigger>
+    <dialogTrigger __module="everest/" x="0" y="0" width="16" height="16" endLevel="false" onlyOnce="true" dialogId="" deathCount="-1"></dialogTrigger>
+
+    <crystalShatterTrigger __module="everest/" x="0" y="0" width="16" height="16" mode="All"></crystalShatterTrigger>
+
+    <completeAreaTrigger __module="everest/" x="0" y="0" width="16" height="16"></completeAreaTrigger>
+    <changeInventoryTrigger __module="everest/" x="0" y="0" width="16" height="16" inventory="Default"></changeInventoryTrigger>
+
+    <lavaBlockerTrigger __module="everest/" x="0" y="0" width="16" height="16" canReenter="false"></lavaBlockerTrigger>
+    <coreModeTrigger  __module="everest/"  x="0" y="0" width="16" height="16" mode="None"></coreModeTrigger>
+    <musicLayerTrigger  __module="everest/" x="0" y="0" width="16" height="16" layers="" enable="false"></musicLayerTrigger>
+    <smoothCameraOffsetTrigger __module="everest/" x="0" y="0" width="16" height="16" offsetXFrom="0.0" offsetXTo="0.0" offsetYFrom="0.0" offsetYTo="0.0" positionMode="NoEffect" onlyOnce="false" xOnly="false" yOnly="false"></smoothCameraOffsetTrigger>
+    <activateDreamBlockTrigger __module="everest/" __pseudo="activateSpaceJams" x="0" y="0" width="16" height="16" fullRoutine="false" activate="true" fastAnimation="false"></activateDreamBlockTrigger>
+</Entities>

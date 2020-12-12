@@ -1,0 +1,181 @@
+<Render>
+    <player>
+        <normal>
+            <sprite texture="characters/player/idle00"></sprite>
+        </normal>
+    </player>
+
+    <darkChaser>
+        <normal>
+            <sprite texture="characters/badeline/idle00"></sprite>
+        </normal>
+    </darkChaser>
+
+    <darkChaserEnd>
+        <normal>
+            <sprite texture="characters/badeline/idle00"></sprite>
+        </normal>
+    </darkChaserEnd>
+
+    <strawberry>
+        <normal winged = "false" moon = "false">
+            <sprite texture="collectables/strawberry/normal00"></sprite>
+        </normal>
+        <moon winged = "false" moon = "true">
+            <sprite texture="collectables/moonBerry/normal00"></sprite>
+        </moon>
+        <winged winged="true" moon = "false">
+            <sprite texture="collectables/strawberry/wings00"></sprite>
+        </winged>
+    </strawberry>
+
+    <goldenBerry>
+        <normal>
+            <sprite texture="collectables/goldberry/idle00"></sprite>
+        </normal>
+    </goldenBerry>
+
+    <memorialTextController>
+        <normal>
+            <sprite texture="collectables/goldberry/wings00"></sprite>
+        </normal>
+    </memorialTextController>
+
+    <badelineBoost>
+        <normal>
+            <sprite texture="objects/badelineboost/idle00"></sprite>
+        </normal>
+    </badelineBoost>
+
+    <finalBoss>
+        <normal>
+            <sprite texture="characters/badelineBoss/boss00"></sprite>
+        </normal>
+    </finalBoss>
+
+    <fireBall>
+        <normal>
+            <sprite texture="objects/fireball/fireball00"></sprite>
+        </normal>
+    </fireBall>
+
+    <!-- I don't know what sprite to use here, so leave it blank (makes a rectangle), take as a todo-->
+    <tentacles>
+    </tentacles>
+
+    <!-- I don't know what sprite to use here, so leave it blank (makes a rectangle), take as a todo -->
+    <cobweb>
+    </cobweb>
+
+    <seeker>
+        <normal>
+            <sprite texture="characters/monsters/predator00"></sprite>
+        </normal>
+    </seeker>
+
+    <seekerStatue>
+        <normal>
+            <sprite texture="decals/5-temple/statue_e"></sprite>
+        </normal>
+    </seekerStatue>
+
+    <playerSeeker>
+        <normal>
+            <sprite texture="characters/monsters/predator00"></sprite>
+        </normal>
+    </playerSeeker>
+
+    <cassette>
+        <normal>
+            <sprite texture="collectables/cassette/idle00"></sprite>
+        </normal>
+    </cassette>
+
+    <towerviewer>
+        <normal>
+            <sprite texture="objects/lookout/lookout00"></sprite>
+        </normal>
+    </towerviewer>
+
+    <!-- I don't know what sprite to use here, so leave it blank (makes a rectangle), take as a todo -->
+    <floatingDebris>
+    </floatingDebris>
+
+    <!-- I don't know what sprite to use here, so leave it blank (makes a rectangle), take as a todo -->
+    <foregroundDebris>
+    </foregroundDebris>
+
+    <dreammirror>
+        <normal>
+            <sprite texture="objects/mirror/frame00"></sprite>
+        </normal>
+    </dreammirror>
+
+    <resortmirror>
+        <normal>
+            <sprite texture="objects/mirror/resortframe"></sprite>
+        </normal>
+    </resortmirror>
+
+    <templeMirror>
+        <normal>
+            <sprite texture="objects/mirror/frame00"></sprite>
+        </normal>
+    </templeMirror>
+
+    <refill>
+        <normal twoDash="false">
+            <sprite texture="objects/refill/idle00"></sprite>
+        </normal>
+        <two twoDash="true">
+            <sprite texture="objects/refillTwo/idle00"></sprite>
+        </two>
+    </refill>
+
+    <infiniteStar>
+        <normal shielded="false">
+            <sprite texture="objects/flyFeather/idle00"></sprite>
+        </normal>
+        <shielded shielded="true">
+            <!-- Make shielding work right -->
+            <sprite texture="objects/flyFeather/idle00"></sprite>
+        </shielded>
+    </infiniteStar>
+
+    <checkpoint>
+        <normal>
+            <sprite texture="objects/checkpoint/highlight09"></sprite>
+        </normal>
+    </checkpoint>
+
+    <summitcheckpoint>
+        <normal>
+            <sprite texture="scenery/summitcheckpoints/base01"></sprite>
+        </normal>
+    </summitcheckpoint>
+
+    <!-- There are a whole lot of other types of spikes -->
+    <spikesUp>
+        <normal>
+            <sprite texture="danger/spikes/default_up00"></sprite>
+        </normal>
+    </spikesUp>
+
+    <spikesDown>
+        <normal>
+            <sprite texture="danger/spikes/default_down00"></sprite>
+        </normal>
+    </spikesDown>
+
+    <spikesLeft>
+        <normal>
+            <sprite texture="danger/spikes/default_left00"></sprite>
+        </normal>
+    </spikesLeft>
+
+    <spikesRight>
+        <normal>
+            <sprite texture="danger/spikes/default_right00"></sprite>
+        </normal>
+    </spikesRight>
+</Render>
