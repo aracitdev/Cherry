@@ -68,5 +68,10 @@ void ViewController::SetWindowView(sf::RenderWindow& window)
         sf::Vector2f difference = sf::Vector2f(sf::Mouse::getPosition(window)) - initialMousePos;
         view.move(difference.x / 10, difference.y/10);
     }
-
 }
+
+void ViewController::SetPos(int32_t x, int32_t y)
+{
+    view.setCenter(x, y);
+}
+

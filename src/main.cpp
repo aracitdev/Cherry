@@ -15,7 +15,8 @@
 #include "Gui/MapRender.h"
 #include "Gui/EntityRenderDef.h"
 #include "GUI/ViewController.h"
-
+#include "GUI/RoomController.h"
+#include "GUI/MainMenuBar.h"
 
 std::string FindCelestePath(void)
 {
@@ -78,22 +79,24 @@ int main(int argc, char* argv[])
     std::map<std::string,std::vector<EntityRenderDef>> renderDefs;
     LoadCelesteContent(atlasTexture,sprites,entities,triggers,fgTiles,bgTiles,renderDefs);
 
+    MainMenuBar mainmenu;
     Sakura::Map mp;
     mp.LoadFromBin("resources/7-Summit.bin");
-    mp.SaveToXML("resources/7-Summit.xml");
     MapRender render(&mp);
     ToolSelection selection;
     selection.tools.push_back(new EntityTool(entities,"Entities"));
     selection.tools.push_back(new EntityTool(triggers,"Triggers"));
+    RoomController room(&mp);
 
-
-    ViewController view(sf::Vector2f(mp.rooms[1]->x, mp.rooms[1]->y),sf::Vector2f(0.75*800,600*0.9), sf::FloatRect(0,0.1,0.75,1.0));
+    ViewController view(sf::Vector2f(mp.rooms[0]->x, mp.rooms[0]->y),sf::Vector2f(0.625*800,600*0.9), sf::FloatRect(0.125,0.1,0.75,1.0));
 
 
     sf::RenderWindow mainWindow(sf::VideoMode(800,600),"Cherry");
     sf::Vector2u windowSize = mainWindow.getSize();
     ImGui::SFML::Init(mainWindow);
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0,0));
+
+    ImGui::StyleColorsLight();
     SetIcon(mainWindow, "resources/cherry.png");
     mainWindow.setFramerateLimit(15);
 
@@ -113,11 +116,18 @@ int main(int argc, char* argv[])
         view.SetWindowView(mainWindow);
         render.Render(fgTiles, bgTiles, sprites, mainWindow, renderDefs);
         mainWindow.setView(mainWindow.getDefaultView());
-        ImGui::SetNextWindowPos({windowSize.x * 3.0f/4.0f,0.0f});
-        ImGui::SetNextWindowSize({windowSize.x/4.0f, (float)windowSize.y});
+        ImGui::SetNextWindowPos({windowSize.x * 3.0f/4.0f,20.0f});
+        ImGui::SetNextWindowSize({windowSize.x/4.0f, (float)windowSize.y - 20});
         ImGui::Begin("Editor", nullptr, ImGuiWindowFlags_NoDecoration);
         selection.Render();
         ImGui::End();
+        ImGui::SetNextWindowPos({0,20});
+        ImGui::SetNextWindowSize({windowSize.x/8.0f, (float)windowSize.y - 20});
+        ImGui::Begin("Rooms", nullptr, ImGuiWindowFlags_NoDecoration);
+        room.Render(view);
+        ImGui::End();
+        mainmenu.Render();
+
         ImGui::SFML::Render(mainWindow);
         mainWindow.display();
 

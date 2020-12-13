@@ -3,6 +3,7 @@
 *.cfg
 *.ini
 *.out
+*.layout
 log.txt
 imgui-master
 imgui-sfml-master

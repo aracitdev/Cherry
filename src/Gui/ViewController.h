@@ -10,7 +10,7 @@ public:
     void OnUpdate(const sf::Vector2u& windowSize);
     void ProcessEvent(sf::Event& e);
     void SetWindowView(sf::RenderWindow& window);
-
+    void SetPos(int32_t x, int32_t y);
 private:
 
     bool isMousePressed;
