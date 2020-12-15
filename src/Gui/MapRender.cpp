@@ -53,3 +53,8 @@ void MapRender::Render(std::map<char,Tileset>& fgTiles, std::map<char,Tileset>& 
     }
 }
 
+LevelRender* MapRender::GetRoom(size_t i)
+{
+    return levels[i];
+}
+

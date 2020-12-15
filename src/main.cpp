@@ -143,6 +143,12 @@ int main(int argc, char* argv[])
                 view.OnUpdate(windowSize);
             }
             view.ProcessEvent(ev);
+            if(view.GetViewport().contains((float)sf::Mouse::getPosition(mainWindow).x / windowSize.x, (float)sf::Mouse::getPosition(mainWindow).y / windowSize.y))
+            {
+                size_t currentRoom = room.GetCurrentRoomIndex();
+                sf::Vector2f worldPos = mainWindow.mapPixelToCoords(sf::Mouse::getPosition(mainWindow), view.view);
+                render.hasChanged[currentRoom]=selection.HandleEvent(ev, worldPos, *render.GetRoom(currentRoom), room.GetCurrentRoom());
+            }
         }
     }
 

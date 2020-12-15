@@ -14,6 +14,8 @@ public:
     void RemoveLevelRender(Sakura::Room* eraseRoom);
     void Render(std::map<char,Tileset>& fgTiles, std::map<char,Tileset>& bgTiles, std::map<std::string,Sprite>& sprites, sf::RenderWindow& window, std::map<std::string, std::vector<EntityRenderDef>>& renderDefs);
 
+
+    LevelRender* GetRoom(size_t i);
     std::vector<uint8_t> hasChanged;
 private:
 

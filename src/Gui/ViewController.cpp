@@ -75,3 +75,7 @@ void ViewController::SetPos(int32_t x, int32_t y)
     view.setCenter(x, y);
 }
 
+sf::FloatRect ViewController::GetViewport(void)
+{
+    return view.getViewport();
+}

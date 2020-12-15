@@ -10,6 +10,7 @@ public:
     ToolSelection();
 
     void Render(void);
+    bool HandleEvent(sf::Event& ev,sf::Vector2f mouseWorld, LevelRender& currentRender, Sakura::Room* currentRoom);
     std::vector<ITool*> tools;
     size_t currentTool;
 };

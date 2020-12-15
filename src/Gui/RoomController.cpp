@@ -35,3 +35,8 @@ Sakura::Room* RoomController::GetCurrentRoom(void)
         selectedItem = currentMap->rooms.size()-1;
     return currentMap->rooms[selectedItem];
 }
+
+size_t RoomController::GetCurrentRoomIndex(void)
+{
+    return selectedItem;
+}

@@ -34,3 +34,9 @@ void ToolSelection::Render(void)
         ImGui::EndChild();
     }
 }
+
+
+bool ToolSelection::HandleEvent(sf::Event& ev,sf::Vector2f mouseWorld, LevelRender& currentRender, Sakura::Room* currentRoom)
+{
+    return tools[currentTool]->HandleEvent(ev,mouseWorld,currentRender,currentRoom);
+}

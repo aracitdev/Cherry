@@ -55,3 +55,27 @@ void EntityTool::Render(void)
         ImGui::ListBoxFooter();
     }
 }
+
+
+bool EntityTool::HandleEvent(sf::Event& ev, sf::Vector2f mouseWorld, LevelRender& currentRender, Sakura::Room* currentRoom)
+{
+    bool returnV=false;
+    switch(ev.type)
+    {
+    case sf::Event::MouseButtonPressed:
+        {
+            if(sf::FloatRect(currentRoom->x, currentRoom->y, currentRoom->width, currentRoom->height).contains(mouseWorld))
+            {
+                Sakura::Entity currentEntity = entityDefs[selectedItem];
+                currentEntity.x = mouseWorld.x;
+                currentEntity.y = mouseWorld.y;
+                currentRoom->entities.push_back(currentEntity);
+                returnV=true;
+            }
+        }
+        break;
+    default:
+        break;
+    }
+    return returnV;
+}

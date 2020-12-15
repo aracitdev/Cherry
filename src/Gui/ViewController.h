@@ -11,11 +11,13 @@ public:
     void ProcessEvent(sf::Event& e);
     void SetWindowView(sf::RenderWindow& window);
     void SetPos(int32_t x, int32_t y);
-private:
 
+    sf::FloatRect GetViewport(void);
+
+    sf::View view;
+private:
     bool isMousePressed;
     sf::Vector2f initialMousePos;
-    sf::View view;
 };
 
 

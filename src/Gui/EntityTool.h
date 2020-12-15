@@ -16,6 +16,7 @@ public:
     void LoadEntities(const std::map<std::string,Sakura::Entity>& entityList);
     virtual void Render(void);
     virtual std::string GetName(void);
+    virtual bool HandleEvent(sf::Event& ev, sf::Vector2f mouseWorld, LevelRender& currentRender, Sakura::Room* currentRoom);
 
     uint32_t selectedItem;
 

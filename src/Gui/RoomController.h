@@ -11,6 +11,7 @@ public:
     void Render(ViewController& view);
     void SetMap(Sakura::Map* mp);
     Sakura::Room* GetCurrentRoom(void);
+    size_t GetCurrentRoomIndex(void);
 
 private:
     Sakura::Map* currentMap;
